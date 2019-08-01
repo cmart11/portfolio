@@ -86,7 +86,7 @@ class BST {
             }
         }
 
-        return this;
+        return this
     }
 
     getMinValue() {
