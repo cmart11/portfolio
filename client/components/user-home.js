@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-import { Navbar } from './index'
+import { Navbar, Message } from './index'
 
 /**
  * COMPONENT
@@ -11,7 +11,7 @@ export const UserHome = props => {
   return (
     <div style={{ width: "100%", height: "100vh", backgroundColor: "red" }}>
       <Navbar />
-      <h1>Cristian</h1>
+      <Message />
     </div>
   )
 }
