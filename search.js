@@ -3,6 +3,11 @@
 // the insert, contains, and remove methods.
 // Feel free to add new properties and methods
 // to the class.
+
+let message = ["Hello, I'm Cris!", "A fullstack developer", "with a background", "in design."]
+
+module.exports = message
+
 class BST {
     constructor(value) {
         this.value = value;
