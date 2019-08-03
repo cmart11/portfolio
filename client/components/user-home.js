@@ -9,9 +9,11 @@ import { Navbar, Message } from './index'
  */
 export const UserHome = props => {
   return (
-    <div style={{ width: "100%", height: "100vh", backgroundColor: "red" }}>
+    <div className="header-content" style={{ backgroundColor: "red" }}>
       <Navbar />
-      <Message />
+      <section>
+        <Message />
+      </section>
     </div>
   )
 }
