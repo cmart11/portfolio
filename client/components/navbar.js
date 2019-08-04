@@ -4,15 +4,12 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { logout } from '../store'
 
-const Navbar = ({ handleClick, isLoggedIn }) => (
-  <div>
-    <nav>
-      <div className="action logo">
-        <img src="#" className="" />
-      </div>
-      <Link to="/">Home</Link>
-    </nav>
-  </div>
+const Navbar = (props) => (
+  <nav id="navbar">
+    <div className="nav-item">
+      <img src="/images/cm-logo-icon-wht.png" className="logo action" />
+    </div>
+  </nav>
 )
 
 /**

@@ -4,7 +4,7 @@
 // Feel free to add new properties and methods
 // to the class.
 
-let message = ["Hello, I'm Cris!", "A fullstack developer", "with a background", "in design."]
+let message = ["Hello, I'm Cristian!", "A fullstack developer", "with a background", "in design."]
 
 module.exports = message
 

@@ -13,19 +13,32 @@ body{
     cursor: none;
 }
 
-nav{
-    padding: 2em;
+#navbar{
+    position: absolute;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    top: 3vh;
+    list-style: none;
+    /* padding-left: 1.6vw; */
+}
+
+.nav-item{
+    margin-right: 5vw; 
+    color: #ffffff;
 }
 
 .logo{
-    width: 40px;
     height: 40px;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .cursor{
     background: white;
-    opacity: .2;
+    opacity: .4;
     border-radius: 50%;
     height: 40px;
     width: 40px;
@@ -34,10 +47,11 @@ nav{
     transition-duration: 50ms;
     transition-timing-function: ease-out;
     z-index: 999;
+    pointer-events: none;
 }
 
 .expand{
-    animation: cursorAnim .5s forwards ease
+    animation: cursorAnim .5s forwards ease-out
 }
 
 @keyframes cursorAnim {
@@ -46,8 +60,13 @@ nav{
     }
 
     50% {
-        transform: scale(1.7);
-        opacity: .25;
+        transform: scale(2.5);
+        opacity: .5;
+    }
+
+    75% {
+        transform: scale(2);
+        opacity: .3;
     }
 
     100% {
@@ -57,11 +76,38 @@ nav{
 
 .header-content{
     height: 100vh;
-    /* padding: 2rem; */
+    padding: 0 2rem;
     display: flex;
     flex-wrap: nowrap;
-    position: relative;
+    /* position: relative; */
     align-content: space-between;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icon{
+    top: 90vh;
+    margin-left: 2.2vw;
+    position: absolute;
+}
+
+.icon a{
+    cursor: none;
+}
+
+.icon img{
+    width: 30px;
+    height: 30px;
+}
+
+.linkedin-icon{
+    left: 3.5rem;
+    /* margin-left: 10px; */
 }
 
 section{
@@ -99,16 +145,26 @@ section h1 .content-line .content-word{
 }
 
 .color-1:hover{
-    color: blueviolet;
+    color: #A9E5BB;
     transition: color 0s;
 }
 
 .color-2:hover{
-    color: yellowgreen;
+    color: #5299D3;
     transition: color 0s;
 }
 
 .color-3:hover{
-    color: goldenrod;
+    color: #F7B05B;
+    transition: color 0s;
+}
+
+.color-4:hover{
+    color: #E4572E;
+    transition: color 0s;
+}
+
+.color-5:hover{
+    color: #FCBCB8;
     transition: color 0s;
 }
