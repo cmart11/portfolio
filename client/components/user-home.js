@@ -2,14 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-import { Navbar, Message } from './index'
+import { Navbar, Message, Cursor } from './index'
 
 /**
  * COMPONENT
  */
 export const UserHome = props => {
   return (
-    <div className="header-content" style={{ backgroundColor: "red" }}>
+    <div className="header-content" style={{ backgroundColor: "black" }}>
+      <Cursor />
       <Navbar />
       <section>
         <Message />

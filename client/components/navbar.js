@@ -7,7 +7,10 @@ import { logout } from '../store'
 const Navbar = ({ handleClick, isLoggedIn }) => (
   <div>
     <nav>
-      <Link to="#">Home</Link>
+      <div className="action logo">
+        <img src="#" className="" />
+      </div>
+      <Link to="/">Home</Link>
     </nav>
   </div>
 )
@@ -32,8 +35,8 @@ const mapDispatch = dispatch => {
 export default connect(mapState, mapDispatch)(Navbar)
 
 /**
- * PROP TYPES
- */
+* PROP TYPES
+*/
 Navbar.propTypes = {
   handleClick: PropTypes.func.isRequired,
   isLoggedIn: PropTypes.bool.isRequired

@@ -6,15 +6,58 @@
 }
 html{
     line-height: 1.15;
+    color: #ffffff;
 }
 
-div{
-    display: block;
+body{
+    cursor: none;
+}
+
+nav{
+    padding: 2em;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    background-color: aqua;
+}
+
+.cursor{
+    background: white;
+    opacity: .2;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    position: absolute;
+    transition-duration: 50ms;
+    transition-timing-function: ease-out;
+    z-index: 999;
+}
+
+.expand{
+    animation: cursorAnim .5s forwards ease
+}
+
+@keyframes cursorAnim {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.7);
+        opacity: .25;
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .header-content{
-    height: 100%;
-    padding: 2rem;
+    height: 100vh;
+    /* padding: 2rem; */
     display: flex;
     flex-wrap: nowrap;
     position: relative;
@@ -51,26 +94,21 @@ section h1 .content-line .content-word{
 }
 
 .color{
-    -webkit-transition: color 3s;
     transition: color 3s;
-    -webkit-transition-delay: 1s;
     transition-delay: 1s;
 }
 
 .color-1:hover{
     color: blueviolet;
-    -webkit-transition: color 0s;
     transition: color 0s;
 }
 
 .color-2:hover{
     color: yellowgreen;
-    -webkit-transition: color 0s;
     transition: color 0s;
 }
 
 .color-3:hover{
     color: goldenrod;
-    -webkit-transition: color 0s;
     transition: color 0s;
 }
