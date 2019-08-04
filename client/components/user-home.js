@@ -2,20 +2,27 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-import { Navbar, Message, Cursor } from './index'
+import { Navbar, Message } from './index'
 
 /**
  * COMPONENT
  */
 export const UserHome = props => {
   return (
-    <div className="header-content" style={{ backgroundColor: "black" }}>
-      <Cursor />
-      <Navbar />
-      <section>
-        <Message />
-      </section>
+    <div>
+      <div className="header-content" style={{ backgroundColor: "black" }}>
+        <Navbar />
+        <section>
+          <Message />
+        </section>
+        <div className="icon action">
+          <a href="https://www.github.com/cmart11" target="_blank" rel="nopener noreferrer"> Click Me
+            <img src="/images/github-icon.jpg" alt="Github Icon" />
+          </a>
+        </div>
+      </div>
     </div>
+
   )
 }
 
