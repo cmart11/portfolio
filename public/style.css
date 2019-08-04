@@ -32,9 +32,8 @@ body{
 }
 
 .logo{
-    width: 40px;
     height: 40px;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .cursor{
@@ -84,9 +83,31 @@ body{
     align-content: space-between;
 }
 
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icon{
+    top: 90vh;
+    margin-left: 2.2vw;
+    position: absolute;
+}
+
+.icon a{
+    cursor: none;
+}
+
 .icon img{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+}
+
+.linkedin-icon{
+    left: 3.5rem;
+    /* margin-left: 10px; */
 }
 
 section{
@@ -124,26 +145,26 @@ section h1 .content-line .content-word{
 }
 
 .color-1:hover{
-    color: blueviolet;
+    color: #A9E5BB;
     transition: color 0s;
 }
 
 .color-2:hover{
-    color: yellowgreen;
+    color: #5299D3;
     transition: color 0s;
 }
 
 .color-3:hover{
-    color: goldenrod;
+    color: #F7B05B;
     transition: color 0s;
 }
 
 .color-4:hover{
-    color: lightcoral;
+    color: #E4572E;
     transition: color 0s;
 }
 
 .color-5:hover{
-    color: lightseagreen;
+    color: #FCBCB8;
     transition: color 0s;
 }

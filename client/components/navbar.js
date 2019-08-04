@@ -6,8 +6,8 @@ import { logout } from '../store'
 
 const Navbar = (props) => (
   <nav id="navbar">
-    <div className="action logo nav-item">
-      <img src="#" className="" />
+    <div className="nav-item">
+      <img src="/images/cm-logo-icon-wht.png" className="logo action" />
     </div>
   </nav>
 )
