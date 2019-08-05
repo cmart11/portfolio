@@ -44,7 +44,7 @@ body{
     width: 40px;
     border: 1px solid white;
     position: absolute;
-    transition-duration: 50ms;
+    transition-duration: 30ms;
     transition-timing-function: ease-out;
     z-index: 999;
     pointer-events: none;
@@ -167,4 +167,192 @@ section h1 .content-line .content-word{
 .color-5:hover{
     color: #FCBCB8;
     transition: color 0s;
+}
+
+#projects-title{
+    background: #5299D3;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: .2em;
+    font-size: 1.3rem;
+}
+
+.projects-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+
+}
+
+.project-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-links > a{
+    cursor: none;
+    color: #ffffff;
+    margin: 1.5rem;
+    text-emphasis: none;
+    text-decoration: none;
+    font-size: 1.8em;
+    border: .5px solid #ffffff;
+    border-radius: 1.5rem;
+    height: 2.7rem;
+    width: 150px;
+}
+
+.project-links > a:hover{
+    border: none;
+    transition: background-color .8s ease;
+    transition-delay: 0s;
+}
+
+.btn-nak:hover{
+    background-color: #F7B05B;
+}
+
+.btn-fmu:hover{
+    background-color: #A9E5BB;
+}
+
+.project-links > a > img{
+    width: 30px;
+    height: 30px;
+    cursor: none;
+    padding-left: 10px;
+}
+
+.project{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.2rem;
+}
+
+.project > img{
+    width: 18vw;
+    padding: 0;
+    /* padding: 2.2rem 0; */
+}
+
+.project > p{
+    font-size: 2.2vw;
+    line-height: 1.2em;
+    width: 40vw;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.project-1{
+    background-color: #A9E5BB;
+}
+
+.project-2{
+    background-color: #F7B05B;
+}
+
+
+.project-2 > img{
+    width: 40vw;
+    padding: 2.2rem 0;
+}
+
+
+@media screen and (max-width: 895px){
+    .project > img{
+        width: 25vw;
+    }
+
+    .project-2 > img{
+        width: 60vw;
+        padding: 2rem 0;
+    }
+
+    .project > p{
+        font-size: 3.8vw;
+        line-height: 1.5em;
+        width: 75vw;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 675px){
+    .project > img{
+        width: 45vw;
+    }
+
+    .project-2 > img{
+        width: 60vw;
+        padding: 2rem 0;
+    }
+
+    .project > p{
+        font-size: 5vw;
+        line-height: 1.5em;
+        width: 75vw;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .project{
+        width: 100vw;
+        padding: 0;
+    }
+    .project > img{
+        width: 45vw;
+    }
+
+    .project-2 > img{
+        width: 80vw;
+        padding: 2rem 0;
+    }
+
+    .header-content{
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+    }
+
+    section h1{
+        font-size: 10vw;
+    }
+
+    .project > p{
+        font-size: 6.5vw;
+        line-height: 1.5em;
+        width: 90vw;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    #projects-title{
+        background: #5299D3;
+        color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        width: 100vw;
+        height: 6vh;
+    }
+
+    .content-line{
+        padding-left: 20px;
+    }
+
+    html{
+        padding: 0;
+    }
 }
