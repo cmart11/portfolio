@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-import { Navbar, Message } from './index'
+import { Navbar, Message, Projects } from './index'
 
 /**
  * COMPONENT
@@ -29,7 +29,7 @@ export const UserHome = props => {
           </a>
         </div>
       </div>
-
+      <Projects />
     </div>
 
   )
