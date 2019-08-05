@@ -240,9 +240,16 @@ section h1 .content-line .content-word{
     padding: 1.2rem;
 }
 
-.project > img{
-    width: 18vw;
+.project > .img{
+    /* width: 18vw; */
+    height: 14rem;
+    width: 90%;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     /* padding: 2.2rem 0; */
 }
 
@@ -263,9 +270,10 @@ section h1 .content-line .content-word{
 }
 
 
-.project-2 > img{
-    width: 40vw;
-    padding: 2.2rem 0;
+.img-2 img{
+    width: 90%; 
+    height: auto;
+    /* padding-top: 1rem; */
 }
 
 
@@ -282,9 +290,9 @@ section h1 .content-line .content-word{
     .project > p{
         font-size: 3.8vw;
         line-height: 1.5em;
-        width: 75vw;
+        width: 90vw;
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 0.8rem;
     }
 }
 
@@ -312,19 +320,26 @@ section h1 .content-line .content-word{
         width: 100vw;
         padding: 0;
     }
-    .project > img{
-        width: 45vw;
+    .project > .img{
+        width: auto;
     }
 
-    .project-2 > img{
-        width: 80vw;
-        padding: 2rem 0;
+    .project-links{
+        width: auto
+    }
+
+    .img{
+        width: 375px;
     }
 
     .header-content{
         height: 100vh;
         width: 100vw;
         padding: 0;
+    }
+
+    section{
+        width: 100vw;
     }
 
     section h1{
@@ -354,5 +369,6 @@ section h1 .content-line .content-word{
 
     html{
         padding: 0;
+
     }
 }
