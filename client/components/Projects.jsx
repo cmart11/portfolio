@@ -8,8 +8,10 @@ export default function Projects() {
             </div>
             <div className="projects-content">
                 <div className="project project-1">
-                    <img src="/images/nak-logo-wht.png" alt="Nak logo" />
-                    <p>Nak is a browser tab productivity platform meant to better organize online resources. This project consists of a Chrome extension that works in combination with a single-page web app. Users can see a list of open tabs on our extension and add tabs to a collections on our website.</p>
+                    <div className="img">
+                        <img src="/images/nak-logo-wht-2.png" alt="Nak logo" />
+                    </div>
+                    <p>Nak is a productivity platform meant to better organize browser tabs. This project consists of a Chrome extension that works in combination with a single-page web app. Users see a list of open tabs on our extension and add tabs to a collection on the website.</p>
                     <div className="project-links">
                         <a
                             href="http://nak-tabs.herokuapp.com/"
@@ -29,7 +31,9 @@ export default function Projects() {
                     </div>
                 </div>
                 <div className="project project-2">
-                    <img src="/images/fmu-logo-wht.png" alt="Funk Me Up logo" />
+                    <div className="img img-2">
+                        <img src="/images/fmu-logo-wht.png" alt="Funk Me Up logo" />
+                    </div>
                     <p>Funk Me Up is a Javascript based fullstack application that expands upon Spotify's current playlist generating features. Users can intuitively create playlists based on the current track they're listening to on any of their devices and post the playlist to their Spotify account.</p>
                     <div className="project-links">
                         <a
