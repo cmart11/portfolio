@@ -187,7 +187,16 @@ section h1 .content-line .content-word{
 .projects-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    position: relative;
 
+}
+
+.inner{
+    position: absolute;
+    font-size: 4rem;
+    font-family: monospace;
+    left: 44vw;
+    top: 5%;
 }
 
 .project-links{
