@@ -28,7 +28,7 @@ Unix • Git • Heroku • FullStack Development • Test Driven Development (T
  
 **A React.js Single-Page Application to quickly create dynamic Spotify playlists based on the music you're currently listening across any device.**
 
-• Developed with Spotify API, React, Node, and Express
+• Developed with the Spotify API, JavaScript, React, Node, React-Redux, Webpack, and Express
 
 
 • Integrated the Spotify API and allowed Spotify user autherazation using Passport.JS
@@ -36,16 +36,16 @@ Unix • Git • Heroku • FullStack Development • Test Driven Development (T
  
 • Implemented a Single-Page Application environment using React-Router to create a dynamic and fast user experience
 
-### Access QR
+### Nak
 
-<img src='https://github.com/mshalam/personalwebsite/blob/master/src/layouts/images/projects/accessQR.png' width='75%' hegiht='75%'>
+<img src='https://github.com/kilo-finch/nak/blob/master/public/images/NAK2.png' width='75%' hegiht='75%'>
 
-**A website designed to generate email friendly ID Cards for tenants and guest of buildings**
+**Nak is an interactive productivity platform meant to better organize and store browser tabs for both individuals and teams.**
 
-• Developed with React, Redux, Node, Express, Postgres, and QR Codes
+• Technologies Utilized: JavaScript, React, Redux, Node, Sockets.io, PostgreSQL, Chrome API, Passport.JS, Bulma, Lodash, React D&D, Sass, Webpack
 
 
-• Implemented an intuitive user experience with an elegant design
+• Implemented an intuitive user experience with a modern design language
   
     
-• Fully customizable to the building or company using it
+• Built a responsive Chrome browser extension that works in combination with our single-page web application
