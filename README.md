@@ -23,7 +23,7 @@ Unix • Git • Heroku • FullStack Development • Test Driven Development (T
 
 ### Funk Me Up
 
-![Funk Me Up](./public/images/fmu-screen-1.png)
+<img src='https://github.com/cmart11/funk-me-up/blob/master/public/images/fmu-screen-1.png' width='75%' hegiht='75%'>
 
  
 **A React.js Single-Page Application to quickly create dynamic Spotify playlists based on the music you're currently listening across any device.**
