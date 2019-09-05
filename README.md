@@ -1,7 +1,7 @@
 # Cristian Martinez
 
 Portfolio built using:
-Javascript, React.js, Node.js, Styled Components, HTML/CSS, Heroku
+Javascript, React.js, Node.js, Styled Components, HTML/CSS, Webpack, Heroku
 
 # Cristian Martinez Personal Website
 
@@ -48,4 +48,4 @@ Unix • Git • Heroku • FullStack Development • Test Driven Development (T
 • Implemented an intuitive user experience with a modern design language
   
     
-• Built a responsive Chrome browser extension that works in combination with our single-page web application
+• Built a responsive Chrome browser extension that works in combination with our          single-page web application
