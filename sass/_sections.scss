@@ -1,0 +1,18 @@
+section {
+
+    h1 {
+        font-size: 8vw;
+
+        .content-line {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start; 
+
+            .content-word {
+                margin-right: 1.6vw;
+            }
+        }
+    }
+}

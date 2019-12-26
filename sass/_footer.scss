@@ -1,0 +1,22 @@
+/**
+* Footer.jsx
+*/
+.footer{
+    background-color:#5299D3;
+    width: 100%;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-link {
+    flex-basis: 33%;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+
+}
