@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
-import PropTypes from 'prop-types'
 import { UserHome } from './components'
 
 /**
@@ -8,7 +7,6 @@ import { UserHome } from './components'
  */
 export default class Routes extends Component {
   componentDidMount() {
-    this.props.loadInitialData()
   }
 
   render() {
@@ -21,10 +19,3 @@ export default class Routes extends Component {
   }
 }
 
-/**
- * PROP TYPES
- */
-Routes.propTypes = {
-  loadInitialData: PropTypes.func.isRequired,
-  isLoggedIn: PropTypes.bool.isRequired
-}
