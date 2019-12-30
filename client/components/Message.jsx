@@ -13,8 +13,8 @@ export default class Message extends Component {
                                     word.split("").map((char, idx) => {
                                         let num = Math.floor(Math.random() * 4) + 1
                                         return idx === 0 ?
-                                            <span className={`color color-${num}`} key={`${char + idx}`}>{char}</span>
-                                            : <span className={`color color-${idx < 5 ? (idx + 1) : (idx - 4)}`} key={`${char + idx}`}>{char}</span>
+                                            <span className={`color color-${num} h1`} key={`${char + idx}`}>{char}</span>
+                                            : <span className={`color color-${idx < 5 ? (idx + 1) : (idx - 4)} h1`} key={`${char + idx}`}>{char}</span>
                                     })
                                 }
                             </div>)
