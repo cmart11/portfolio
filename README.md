@@ -1,23 +1,23 @@
 # Cristian Martinez
 
 Portfolio built using:
-Javascript, React.js, Node.js, Styled Components, HTML/CSS, Webpack, Heroku
+Javascript, React.js, Node.js, Styled Components, HTML5/CSS3, Webpack, Heroku
 
 # Cristian Martinez Personal Website
 
-http://cris.fun
+http://www.cris.fun
 
 ## Hey! I'm Cristian, a Full-Stack Software Engineer with a background in design
 
-I'm looking forward to expanding my knowledge of software development and leveraging my skills in programming and graphic design to explore careers in the tech industry
+I'm looking forward to expanding my knowledge of software development and leveraging my skills in programming and graphic design to explore careers in the tech industry.
 
 ## Programming Languages
 
-JavaScript • React • Redux • Node • Express • SQL • HTML • CSS
+JavaScript • React • Redux • Node • PHP • Express • PostgresSQL • HTML5 • CSS3 • SASS
 
 ## Proficient In
 
-Unix • Git • Heroku • FullStack Development • Test Driven Development (TDD) • Agile Methodology • Webpack • SASS • UI/UX • Typescript
+Unix • Git • GitHub • Webpack • Angular 6+ • WordPress • Heroku • Test-Driven Development (Mocha, Chai, Jest) • Agile Methodology • UI/UX Design
 
 ## Web Projects
 
