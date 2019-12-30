@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-import { Navbar, Message, Projects } from './index'
+import { Navbar, Message, Projects, ToggleSwitch } from './index'
 
 /**
  * COMPONENT
@@ -27,6 +27,7 @@ export const UserHome = props => {
           <a href="https://www.linkedin.com/in/crismartinez1/" target="_blank" rel="noopener noreferrer">
             <img src="/images/linkedin-icon.png" alt="Linkedin" className="action" />
           </a>
+          <ToggleSwitch/>
         </div>
       </div>
       <Projects />
