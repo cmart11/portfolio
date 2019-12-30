@@ -1,8 +1,33 @@
+/**
+ FONT-FACE
+*/
+
+@font-face {
+    font-family: 'Sporting Grotesque_Bold';
+    src:    url('./fonts/Sporting_Grotesque-Bold.eot');
+    src:    url('./fonts/Sporting_Grotesque-Bold.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Sporting_Grotesque-Bold.woff') format('woff'),
+            url('./fonts/Sporting_Grotesque-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sporting Grotesque_Regular';
+    src:    url('./fonts/Sporting_Grotesque-Regular.eot');
+    src:    url('./fonts/Sporting_Grotesque-Regular.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Sporting_Grotesque-Regular.woff') format('woff'),
+            url('./fonts/Sporting_Grotesque-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: 'Sporting Grotesque_Regular', 'Arial Narrow', Arial, sans-serif
 }
 html{
     line-height: 1.15;
@@ -118,9 +143,11 @@ section{
     align-items: center;
 }
 
-h1{
-    font-size: 2em;
+.h1{
+    font-size: 0.8em;
     font-weight: bold;
+    font-family: 'Sporting Grotesque_Bold';
+    line-height: 0.8em;
 }
 
 section h1{
@@ -263,7 +290,7 @@ section h1 .content-line .content-word{
 }
 
 .project > p{
-    font-size: 2.2vw;
+    font-size: 2em;
     line-height: 1.2em;
     width: 40vw;
     text-align: center;
