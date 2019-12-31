@@ -1,0 +1,19 @@
+$white: #fff;
+$black: #000;
+
+// Animation Colors
+$mint: #A9E5BB;
+$blue: #5299D3;
+$orange: #F7B05B;
+$red: #E4572E;
+$pink: #FCBCB8;
+
+@each $color, $value in $colors {
+    .color-#{$color} {
+      fill: $value;
+      color: $value;
+    }
+    .background-#{$color} {
+      background-color: $value;
+    }
+}

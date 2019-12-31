@@ -1,3 +1,11 @@
+.inner{
+    position: absolute;
+    font-size: 4rem;
+    font-family: monospace;
+    left: 44vw;
+    top: 5%;
+}
+
 .project{
     height: 75vh;
     display: flex;
@@ -86,9 +94,9 @@
 }
 
 .project-1{
-    background-color: #A9E5BB;
+    background-color: $mint;
 }
 
 .project-2{
-    background-color: #F7B05B;
+    background-color: $orange;
 }

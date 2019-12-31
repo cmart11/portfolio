@@ -7,16 +7,15 @@
 }
 
 .footer-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template: repeat(1fr, 3) / 1fr;
 }
 
 .footer-link {
-    flex-basis: 33%;
     text-decoration: none;
     cursor: pointer;
-    color: #fff;
+    color: $white;
+    grid-column: ;
 
 }
