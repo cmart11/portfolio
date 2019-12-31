@@ -1,7 +1,10 @@
 node_modules
 public/bundle.js
 public/bundle.js.map
+public/scss/main.bundle.css
+public/scss/main.bundle.css.map
 secrets.js
 .DS_Store
 npm-debug.log
 yarn-error.log
+fonts

@@ -4,7 +4,7 @@ import message from '../../search'
 export default class Message extends Component {
     render() {
         return (
-            <h1>
+            <div className="greeting">
                 {message.map(line =>
                     <div className="content-line" key={line}>
                         {line.split(" ").map(word =>
@@ -22,7 +22,7 @@ export default class Message extends Component {
                     </div>)
                 }
 
-            </h1>
+            </div>
         )
     }
 }

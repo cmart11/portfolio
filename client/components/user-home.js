@@ -8,13 +8,12 @@ import { Navbar, Message, Projects, Footer } from './index'
  */
 export const UserHome = () => {
   return (
-    <div>
-      <div className="header-content" style={{ backgroundColor: "black" }}>
+    <React.Fragment>
+      <div className="header-content site-wrapper" style={{ backgroundColor: "black" }}>
         <Navbar />
         <section>
           <Message />
         </section>
-
       </div>
       <div className="icons">
         <div className="icon">
@@ -27,13 +26,11 @@ export const UserHome = () => {
             <img src="/images/linkedin-icon.png" alt="Linkedin" className="action" />
           </a>
         </div>
-        {/* <div className="icon top">
-          <a style={{ color: "#fff", marginLeft: "200px" }} href="#bottom">Projects</a>
-        </div> */}
       </div>
       <Projects />
       {/* <Footer /> */}
-    </div>
+    </React.Fragment>
+
   )
 }
 
