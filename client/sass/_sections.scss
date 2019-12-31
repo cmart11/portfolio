@@ -1,6 +1,6 @@
 section {
 
-    h1 {
+    .greeting {
         font-size: 8vw;
 
         .content-line {
@@ -15,4 +15,12 @@ section {
             }
         }
     }
+}
+
+
+
+
+.header-content{
+    background-color: $black;
+    height: 100vh;
 }
