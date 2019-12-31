@@ -1,13 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
 
-import { Navbar, Message, Projects } from './index'
+import { Navbar, Message, Projects, Footer } from './index'
 
 /**
  * COMPONENT
  */
-export const UserHome = props => {
+export const UserHome = () => {
   return (
     <div>
       <div className="header-content" style={{ backgroundColor: "black" }}>
@@ -28,23 +27,15 @@ export const UserHome = props => {
             <img src="/images/linkedin-icon.png" alt="Linkedin" className="action" />
           </a>
         </div>
+        {/* <div className="icon top">
+          <a style={{ color: "#fff", marginLeft: "200px" }} href="#bottom">Projects</a>
+        </div> */}
       </div>
       <Projects />
+      {/* <Footer /> */}
     </div>
-
   )
 }
-
-/**
- * CONTAINER
- */
-const mapState = state => {
-  return {
-    email: state.user.email
-  }
-}
-
-export default connect(mapState)(UserHome)
 
 /**
  * PROP TYPES

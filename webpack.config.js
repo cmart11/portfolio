@@ -11,7 +11,7 @@ module.exports = {
     filename: './public/bundle.js'
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', 'scss']
   },
   devtool: 'source-map',
   watchOptions: {
@@ -23,6 +23,11 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.scss?$/,
+        exclude: /node_modules/,
+        loader: 'sass-loader'
       }
     ]
   }
