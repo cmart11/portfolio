@@ -1,0 +1,41 @@
+.site-wrapper {
+    margin: 0 3.5em;
+}
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+
+// Breakpoints
+$breakpoint-sm: 520px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 900px;
+$breakpoint-nav: 1100px;
+$breakpoint-xl: 1346px;
+
+// Padding/spacing
+$beat: 10px;
+$padding-sm: 30px;
+$padding-md: $padding-sm * 2;
+$padding-lg: $padding-sm * 4;
+
+// Site Wrapper
+$sitewrapper: 1380px + ($padding-lg * 2);
+
+  // Smooth text
+@mixin font-smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Text alignment
+.align-left {
+    text-align: left;
+}
+.align-center {
+    text-align: center;
+}
+.align-right {
+    text-align: right;
+}

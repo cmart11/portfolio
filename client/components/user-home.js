@@ -1,21 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
 
 import { Navbar, Message, Projects, ToggleSwitch } from './index'
 
 /**
  * COMPONENT
  */
-export const UserHome = props => {
+export const UserHome = () => {
   return (
-    <div>
-      <div className="header-content" style={{ backgroundColor: "black" }}>
+    <React.Fragment>
+      <div className="header-content site-wrapper" style={{ backgroundColor: "black" }}>
         <Navbar />
         <section>
           <Message />
         </section>
-
       </div>
       <div className="icons">
         <div className="icon">
@@ -27,25 +25,15 @@ export const UserHome = props => {
           <a href="https://www.linkedin.com/in/crismartinez1/" target="_blank" rel="noopener noreferrer">
             <img src="/images/linkedin-icon.png" alt="Linkedin" className="action" />
           </a>
-          <ToggleSwitch/>
+          {/* <ToggleSwitch/> */}
         </div>
       </div>
       <Projects />
-    </div>
+      {/* <Footer /> */}
+    </React.Fragment>
 
   )
 }
-
-/**
- * CONTAINER
- */
-const mapState = state => {
-  return {
-    email: state.user.email
-  }
-}
-
-export default connect(mapState)(UserHome)
 
 /**
  * PROP TYPES

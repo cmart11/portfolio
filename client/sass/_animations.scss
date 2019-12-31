@@ -1,0 +1,66 @@
+// Header text hover animations
+.color{
+    transition: color 3s;
+    transition-delay: 1s;
+}
+
+.color-1:hover{
+    color: $mint;
+    transition: color 0s;
+}
+
+.color-2:hover{
+    color: $blue;
+    transition: color 0s;
+}
+
+.color-3:hover{
+    color: $orange;
+    transition: color 0s;
+}
+
+.color-4:hover{
+    color: $red;
+    transition: color 0s;
+}
+
+.color-5:hover{
+    color: $pink;
+    transition: color 0s;
+}
+
+
+// Cursor Animation
+
+.expand{
+    animation: cursorAnim .5s forwards ease-out
+}
+
+@keyframes cursorAnim {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2.5);
+        opacity: .5;
+    }
+
+    75% {
+        transform: scale(2);
+        opacity: .3;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+// Button hover 
+.btn-nak:hover{
+    background-color: $orange;
+}
+
+.btn-fmu:hover{
+    background-color: $mint;
+}
