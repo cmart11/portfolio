@@ -25,15 +25,12 @@ Unix • Git • GitHub • Webpack • Angular 6+ • WordPress • Heroku • 
 
 <img src='https://github.com/cmart11/funk-me-up/blob/master/public/images/fmu-screen-1.png' width='75%' hegiht='75%'>
 
- 
 **A React.js Single-Page Application to quickly create dynamic Spotify playlists based on the music you're currently listening across any device.**
 
 • Developed with the Spotify API, JavaScript, React, Node, React-Redux, Webpack, and Express
 
-
 • Integrated the Spotify API and allowed Spotify user autherazation using Passport.JS
 
- 
 • Implemented a Single-Page Application environment using React-Router to create a dynamic and fast user experience
 
 ### Nak
@@ -44,8 +41,6 @@ Unix • Git • GitHub • Webpack • Angular 6+ • WordPress • Heroku • 
 
 • Technologies Utilized: JavaScript, React, Redux, Node, Sockets.io, PostgreSQL, Chrome API, Passport.JS, Bulma, Lodash, React D&D, Sass, Webpack
 
-
 • Implemented an intuitive user experience with a modern design language
-  
-    
-• Built a responsive Chrome browser extension that works in combination with our          single-page web application
+
+• Built a responsive Chrome browser extension that works in combination with our single-page web application

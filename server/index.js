@@ -7,7 +7,6 @@ const PORT = process.env.PORT || 8080
 const app = express()
 module.exports = app
 
-
 /**
  * In your development environment, you can keep all of your
  * app's secret API keys in a file called `secrets.js`, in your project
@@ -18,14 +17,13 @@ module.exports = app
  */
 if (process.env.NODE_ENV !== 'production') require('../secrets')
 
-
 const createApp = () => {
   // logging middleware
   app.use(morgan('dev'))
 
   // body parsing middleware
   app.use(express.json())
-  app.use(express.urlencoded({ extended: true }))
+  app.use(express.urlencoded({extended: true}))
 
   // compression middleware
   app.use(compression())
@@ -59,13 +57,11 @@ const createApp = () => {
 
 const startListening = () => {
   // start listening (and create a 'server' object representing our server)
-  app.listen(PORT, () =>
-    console.log(`Listening on port ${PORT}`)
-  );
+  app.listen(PORT, () => console.log(`Listening on port ${PORT}`))
 }
 
 async function bootApp() {
-  await createApp();
+  await createApp()
   await startListening()
 }
 // This evaluates as true when this file is run directly from the command line,

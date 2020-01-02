@@ -1,31 +1,31 @@
-.logo{
-    height: 40px;
-    /* background-color: aqua; */
+.logo {
+  height: 40px;
+  /* background-color: aqua; */
 }
 
-.linkedin-icon{
-    left: 3.5rem;
-    /* margin-left: 10px; */
+.linkedin-icon {
+  left: 3.5rem;
+  /* margin-left: 10px; */
 }
 
-.icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .icon {
-    top: 90vh;
-    margin-left: 2.2vw;
-    position: absolute;
+  top: 90vh;
+  margin-left: 2.2vw;
+  position: absolute;
 
-    a {
-        cursor: none;
-    }
+  a {
+    cursor: none;
+  }
 
-    img {
-        width: 30px;
-        height: 30px;
-    }
+  img {
+    width: 30px;
+    height: 30px;
+  }
 }
