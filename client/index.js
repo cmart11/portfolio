@@ -6,7 +6,7 @@ import history from './history'
 import store from './store'
 import App from './app'
 
-import './sass/index.scss'
+import './sass/main.scss'
 
 ReactDOM.render(
   <Provider store={store}>
