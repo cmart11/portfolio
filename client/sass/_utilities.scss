@@ -1,11 +1,10 @@
 .site-wrapper {
-    margin: 0 3.5em;
+  margin: 0 3.5em;
 }
 
 @function color($color-name) {
-    @return map-get($colors, $color-name);
+  @return map-get($colors, $color-name);
 }
-
 
 // Breakpoints
 $breakpoint-sm: 520px;
@@ -23,19 +22,19 @@ $padding-lg: $padding-sm * 4;
 // Site Wrapper
 $sitewrapper: 1380px + ($padding-lg * 2);
 
-  // Smooth text
+// Smooth text
 @mixin font-smoothing {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // Text alignment
 .align-left {
-    text-align: left;
+  text-align: left;
 }
 .align-center {
-    text-align: center;
+  text-align: center;
 }
 .align-right {
-    text-align: right;
+  text-align: right;
 }

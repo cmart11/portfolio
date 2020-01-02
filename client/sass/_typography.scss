@@ -1,33 +1,35 @@
 @font-face {
-    font-family: 'Sporting Grotesque_Bold';
-    src:    url('/fonts/Sporting_Grotesque-Bold.eot');
-    src:    url('/fonts/Sporting_Grotesque-Bold.eot?#iefix') format('embedded-opentype'),
-            url('/fonts/Sporting_Grotesque-Bold.woff') format('woff'),
-            url('/fonts/Sporting_Grotesque-Bold.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Sporting Grotesque_Bold';
+  src: url('/fonts/Sporting_Grotesque-Bold.eot');
+  src: url('/fonts/Sporting_Grotesque-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/Sporting_Grotesque-Bold.woff') format('woff'),
+    url('/fonts/Sporting_Grotesque-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sporting Grotesque_Regular';
-    src:    url('/fonts/Sporting_Grotesque-Regular.eot');
-    src:    url('/fonts/Sporting_Grotesque-Regular.eot?#iefix') format('embedded-opentype'),
-            url('/fonts/Sporting_Grotesque-Regular.woff') format('woff'),
-            url('/fonts/Sporting_Grotesque-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Sporting Grotesque_Regular';
+  src: url('/fonts/Sporting_Grotesque-Regular.eot');
+  src: url('/fonts/Sporting_Grotesque-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/Sporting_Grotesque-Regular.woff') format('woff'),
+    url('/fonts/Sporting_Grotesque-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .h1 {
-    font-size: 0.8em;
-    font-weight: bold;
-    font-family: 'Sporting Grotesque_Bold';
-    color: $white;
-    font-weight: 900;
-    cursor: none;
+  font-size: 0.8em;
+  font-weight: bold;
+  font-family: 'Sporting Grotesque_Bold';
+  color: $white;
+  font-weight: 900;
+  cursor: none;
 }

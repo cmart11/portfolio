@@ -1,19 +1,19 @@
 /**
 * Footer.jsx
 */
-.footer{
-    background-color:#5299D3;
-    width: 100%;
+.footer {
+  background-color: #5299d3;
+  width: 100%;
 }
 
 .footer-nav {
-    width: 100%;
-    display: grid;
-    grid-template: repeat(1fr, 3) / 1fr;
+  width: 100%;
+  display: grid;
+  grid-template: repeat(1fr, 3) / 1fr;
 }
 
 .footer-link {
-    text-decoration: none;
-    cursor: pointer;
-    color: $white;
+  text-decoration: none;
+  cursor: pointer;
+  color: $white;
 }

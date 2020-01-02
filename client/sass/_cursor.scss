@@ -1,13 +1,13 @@
-.cursor{
-    background: white;
-    opacity: .4;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    border: 1px solid white;
-    position: absolute;
-    transition-duration: 30ms;
-    transition-timing-function: ease-out;
-    z-index: 999;
-    pointer-events: none;
+.cursor {
+  background: white;
+  opacity: 0.4;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+  position: absolute;
+  transition-duration: 30ms;
+  transition-timing-function: ease-out;
+  z-index: 999;
+  pointer-events: none;
 }
