@@ -1,0 +1,18 @@
+#navbar {
+    position: absolute;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    top: 3vh;
+    list-style: none;
+    /* padding-left: 1.6vw; */
+}
+  
+.nav-item {
+    margin-right: 5vw;
+    color: $white;
+    background-color: red;
+}
