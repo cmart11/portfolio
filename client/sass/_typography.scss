@@ -18,6 +18,11 @@
     font-style: normal;
 }
 
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .h1 {
     font-size: 0.8em;
     font-weight: bold;
