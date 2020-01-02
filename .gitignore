@@ -8,3 +8,4 @@ secrets.js
 npm-debug.log
 yarn-error.log
 fonts
+package-lock.json
