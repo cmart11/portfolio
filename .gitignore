@@ -4,6 +4,8 @@ public/bundle.js.map
 public/styles
 public/styles/main.bundle.css
 public/styles/main.bundle.css.map
+main.bundle.css
+main.bundle.css.map
 secrets.js
 .DS_Store
 npm-debug.log
