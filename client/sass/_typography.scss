@@ -20,16 +20,170 @@
   font-style: normal;
 }
 
+@mixin sporting-regular {
+  font-family: 'Sporting Grotesque_Regular', sans-serif;
+}
+
+@mixin sporting-bold {
+  font-family: 'Sporting Grotesque_Bold', sans-serif;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .h1 {
+  @include sporting-bold();
   font-size: 0.8em;
   font-weight: bold;
-  font-family: 'Sporting Grotesque_Bold';
   color: $white;
   font-weight: 900;
   cursor: none;
+}
+
+/// Mixin to allow us to concisely define all aspects of a paragraph style (except for family.)
+/// @param {number} $size - Font size specified in pixels (without 'px')
+/// @param {number} $lh - Line height specified in pixels (without 'px')
+/// @param {number} $ls [0em] - Letter spacing
+/// @param {number or string} $w [normal] - Font weight
+/// @param {string} $tt [none] - Text transform
+/// @example scss - Used as a shortcut in defining a paragraph style...
+///   @mixin h1 {
+///     @include font-display; // The font face
+///     @include paragraph-style (12, 16, $ls: .075em, $tt: uppercase); // Other properties
+///   }
+@mixin paragraph-style ($size, $lh, $ls: 0em, $w: normal, $tt: none) {
+  font-size: #{$size}px;
+  line-height: ($lh / $size);
+  letter-spacing: $ls;
+  text-transform: $tt;
+  font-weight: $w;
+}
+
+// Type Style Mixins + Classes
+/// example:
+/// @mixin h1 {
+///   @include font-display;
+///   @include paragraph-style(31, 40, -.010322581em);
+///   @include media-md {
+///     @include paragraph-style(96, 96, -.005208333em);
+///   }
+/// }
+/// .h1 {
+///   @include h1;
+/// }
+
+// h1
+@mixin h1 {
+  //@include font-name;
+  @include paragraph-style(40, 42);
+
+  @include media-md {
+    @include paragraph-style(63, 66);
+  }
+}
+// .h1 {
+//   @include h1;
+// }
+
+@mixin h1-alt {
+  //@include font-name;
+  @include paragraph-style(40, 42);
+
+  @include media-md {
+    @include paragraph-style(63, 66);
+  }
+}
+.h1-alt {
+  @include h1-alt;
+}
+
+// h2
+@mixin h2 {
+  //@include font-name;
+  @include paragraph-style(32, 36);
+
+  @include media-md {
+    @include paragraph-style(54, 60);
+  }
+}
+.h2 {
+  @include h2;
+}
+
+// h2
+@mixin h2-small {
+  //@include font-name;
+  @include paragraph-style(32, 36);
+
+  @include media-md {
+    @include paragraph-style(36, 42);
+  }
+}
+.h2-small {
+  @include h2;
+}
+
+// h3
+@mixin h3 {
+  //@include font-name;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+  @include paragraph-style(12, 24, 0, normal, uppercase);
+
+  @include media-md {
+    @include paragraph-style(13, 24, 0, normal, uppercase);
+  }
+}
+.h3 {
+  @include h3;
+}
+
+// h3-simple
+@mixin h3-simple {
+  //@include font-name;
+  @include paragraph-style(12, 24, 0, normal, uppercase);
+
+  @include media-md {
+    @include paragraph-style(13, 24, 0, normal, uppercase);
+  }
+}
+.h3-simple {
+  @include h3-simple;
+}
+
+// p1
+@mixin p1 {
+  //@include font-name;
+  @include paragraph-style(16, 24);
+
+  @include media-md {
+    @include paragraph-style(18, 24);
+  }
+}
+.p1 {
+  @include p1;
+}
+
+// p1-small variation
+@mixin p1-small {
+  //@include font-name;
+  @include paragraph-style(16, 24);
+}
+.p1-small {
+  @include p1-small;
+}
+
+// p2
+@mixin p2 {
+  //@include font-name;
+  @include paragraph-style(24, 30);
+
+  @include media-md {
+    @include paragraph-style(36, 42);
+  }
+}
+.p2 {
+  @include p2;
 }

@@ -1,3 +1,4 @@
+// Helpers and Variables
 @import './reset';
 @import './colors';
 @import './variables';
@@ -5,11 +6,13 @@
 @import './mixins';
 @import './typography';
 @import './animations';
+@import './media';
+
+// Components
 @import './footer';
 @import './icons_logos';
 @import './images';
 @import './projects';
-@import './media';
 @import './sections';
 @import './cursor';
 @import './navbar';
