@@ -20,6 +20,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'NeueMachina-Ultrabold';
+  src: url('/fonts/NeueMachina-Ultrabold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @mixin sporting-regular {
   font-family: 'Sporting Grotesque_Regular', sans-serif;
 }
@@ -34,7 +41,8 @@ body {
 }
 
 .h1 {
-  @include sporting-bold();
+  font-family: 'NeueMachina-Ultrabold';
+  // @include sporting-bold();
   font-size: 0.8em;
   font-weight: bold;
   color: $white;

@@ -4,12 +4,20 @@
 // Feel free to add new properties and methods
 // to the class.
 
+// let message = [
+//   "Hello, I'm Cristian!",
+//   'A fullstack developer',
+//   'with a background',
+//   'in design.'
+// ]
 let message = [
   "Hello, I'm Cristian!",
   'A fullstack developer',
   'with a background',
   'in design.'
 ]
+
+message = message.map(str => str.toUpperCase());
 
 module.exports = message
 
