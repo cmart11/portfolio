@@ -1,7 +1,16 @@
-section {
-  .greeting {
-    font-size: 8vw;
+.header-content {
+  background-color: $black;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas: "logo switch"
+                       "message"
+                       "icons";
 
+  // Header message:
+  .greeting {
+    grid-area: message;
     .content-line {
       width: 100%;
       display: flex;
@@ -14,9 +23,13 @@ section {
       }
     }
   }
+
+  #navbar{
+    grid-area: logo;
+  }
+  .icons{
+    grid-area: icons;
+  }
+
 }
 
-.header-content {
-  background-color: $black;
-  height: 100vh;
-}
