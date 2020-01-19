@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import message from '../../search'
 
 export default class Message extends Component {
@@ -19,15 +19,15 @@ export default class Message extends Component {
                       {char}
                     </span>
                   ) : (
-                    <span
-                      className={`color color-${
-                        idx < 5 ? idx + 1 : idx - 4
-                      } h1`}
-                      key={`${char + idx}`}
-                    >
-                      {char}
-                    </span>
-                  )
+                      <span
+                        className={`color color-${
+                          idx < 5 ? idx + 1 : idx - 4
+                          } h1`}
+                        key={`${char + idx}`}
+                      >
+                        {char}
+                      </span>
+                    )
                 })}
               </div>
             ))}
