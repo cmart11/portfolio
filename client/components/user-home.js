@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import {Navbar, Message, Projects, Footer} from './index'
+import { Navbar, Message, Projects, ToggleSwitch } from './index'
 
 /**
  * COMPONENT
@@ -11,7 +11,7 @@ export const UserHome = () => {
     <React.Fragment>
       <div
         className="header-content site-wrapper"
-        style={{backgroundColor: 'black'}}
+        style={{ backgroundColor: 'black' }}
       >
         <Navbar />
         <section>
@@ -44,6 +44,7 @@ export const UserHome = () => {
               className="action"
             />
           </a>
+          {/* <ToggleSwitch/> */}
         </div>
       </div>
       <Projects />
