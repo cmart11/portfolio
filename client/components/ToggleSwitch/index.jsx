@@ -26,8 +26,8 @@ const Slider = styled.span`
     border-radius: 20px;
 
     &:before{
-        position: absolute;
         content: "";
+        position: absolute;
         height: 20px;
         width: 20px;
         background-color: #999;
@@ -47,16 +47,16 @@ const SliderInput = styled.input`
 `
 
 export default class ToggleSwitch extends Component {
-    constructor(props){
+    constructor(props) {
         super(props)
         this.state = {
             checked: true
         }
     }
 
-    onToggle(){
+    onToggle() {
         this.setState({
-            
+
         })
     }
     render() {
@@ -72,10 +72,10 @@ export default class ToggleSwitch extends Component {
 ToggleSwitch.propTypes = {
     checked: PropTypes.bool,
     onToggle: PropTypes.func
-} 
+}
 
 const mapDispatch = dispatch => ({
-    onToggle: value =>  dispatch(toggleSwitch(value))
+    onToggle: value => dispatch(toggleSwitch(value))
 })
 
 const mapState = state => ({

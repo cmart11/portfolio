@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Navbar, Message, Projects, Icons, ToggleSwitch } from './index'
 
 export const UserHome = () => {
   return (
-    <React.Fragment>
+    <Fragment>
       <div className="header-content site-wrapper" >
         <Navbar />
         <ToggleSwitch />
@@ -11,6 +11,6 @@ export const UserHome = () => {
         <Icons />
       </div>
       <Projects />
-    </React.Fragment>
+    </Fragment>
   )
 }

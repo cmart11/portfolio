@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import message from '../../search'
+import message from '../../copy'
 
 export default class Message extends Component {
   render() {
@@ -9,21 +9,19 @@ export default class Message extends Component {
           <div className="content-line" key={line}>
             {line.split(' ').map(word => (
               <div className="content-word" key={word}>
-                {word.split('').map((char, idx) => {
+                {word.split('').map((char, index) => {
                   let num = Math.floor(Math.random() * 4) + 1
-                  return idx === 0 ? (
+                  return index === 0 ? (
                     <span
                       className={`color color-${num} h1`}
-                      key={`${char + idx}`}
+                      key={`${char + index}`}
                     >
                       {char}
                     </span>
                   ) : (
                       <span
-                        className={`color color-${
-                          idx < 5 ? idx + 1 : idx - 4
-                          } h1`}
-                        key={`${char + idx}`}
+                        className={`color color-${index < 5 ? index + 1 : index - 4} h1`}
+                        key={`${char + index}`}
                       >
                         {char}
                       </span>
