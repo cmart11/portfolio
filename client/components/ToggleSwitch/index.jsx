@@ -61,7 +61,7 @@ export default class ToggleSwitch extends Component {
     }
     render() {
         return (
-            <Container>
+            <Container className="toggle">
                 <SliderInput type="checkbox" checked={this.props.checked} onChange={e => this.props.onToggle(e.target.checked)} />
                 <Slider />
             </Container>

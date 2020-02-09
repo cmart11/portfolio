@@ -5,8 +5,8 @@ export default class Message extends Component {
   render() {
     return (
       <div className="greeting">
-        {message.map(line => (
-          <div className="content-line" key={line}>
+        {message.map((line, index) => (
+          <div className={`content-line ${index % 2 ? 'line-shift' : ''}`} key={line}>
             {line.split(' ').map(word => (
               <div className="content-word" key={word}>
                 {word.split('').map((char, index) => {
