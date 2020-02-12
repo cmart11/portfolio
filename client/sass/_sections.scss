@@ -2,11 +2,11 @@
   background-color: $black;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr  1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 10% 80% 10%;
-  grid-template-areas: "logo . switch"
+  grid-template-areas: "menu logo switch"
                        "message message message"
-                       "icons . menu";
+                       "icons . . ";
 
   // Header message:
   .greeting {
@@ -19,23 +19,25 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      justify-content: flex-start;
+      justify-content: center;
       &.line-shift{
         // padding-left: 5vw;
+        justify-content: flex-end;
       }
 
       .content-word {
         margin-right: 1.6vw;
         font-size: 7.5vw;
-        line-height: 0.8em;
+        line-height: 0.65em;
+        // letter-spacing: 0px;
       }
     }
   }
 
-  #navbar{
+  #logo{
     grid-area: logo;
-    align-self: center;
-    justify-self: start;
+    align-self: flex-start;
+    justify-self: center;
   }
   .icons{
     grid-area: icons;

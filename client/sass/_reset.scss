@@ -24,7 +24,6 @@
  */
 
 html {
-  line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -90,9 +89,9 @@ pre {
    * Remove the gray background on active links in IE 10.
    */
 
-a {
-  background-color: transparent;
-}
+// a {
+//   background-color: transparent;
+// }
 
 /**
    * 1. Remove the bottom border in Chrome 57-
@@ -174,7 +173,7 @@ img {
    * 2. Remove the margin in Firefox and Safari.
    */
 
-button,
+
 input,
 optgroup,
 select,
@@ -215,7 +214,7 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  -webkit-appearance: button;
+  // -webkit-appearance: button; 
 }
 
 /**
@@ -230,16 +229,6 @@ button::-moz-focus-inner,
   padding: 0;
 }
 
-/**
-   * Restore the focus styles unset by the previous rule.
-   */
-
-button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
 
 /**
    * Correct the padding in Firefox.
@@ -324,10 +313,7 @@ textarea {
    * 2. Change font properties to `inherit` in Safari.
    */
 
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
+
 
 /* Interactive
      ========================================================================== */

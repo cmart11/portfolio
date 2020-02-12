@@ -1,10 +1,10 @@
 /* eslint-disable complexity */
 
 let message = [
-  "Hello, I'm Cristian!",
-  'A fullstack developer',
+  "Hey, I'm Cristian!",
+  'A front end developer',
   'with a background',
-  'in design.'
+  'in art & design.'
 ]
 
 message = message.map(str => str.toUpperCase());

@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <div>
       <div id="projects-title">
-        <h2 className="h2">PROJECTS</h2>
+        <h2>PROJECTS</h2>
       </div>
       <div className="projects-content">
         <div className="project project-1">
@@ -22,18 +22,18 @@ export default function Projects() {
               href="http://nak-tabs.herokuapp.com/"
               rel="noopener noreferrer"
               target="_blank"
-              className="project-links btn-nak"
+              className="btn-nak visit"
             >
-              Visit
+              <button>Visit</button>
             </a>
             <a
               href="https://github.com/kilo-finch/"
               rel="noopener noreferrer"
               target="_blank"
-              className="project-links btn-nak"
+              className="btn-nak github"
             >
-              Github
-              <img src="/images/github-icon.jpg" alt="Github logo" />
+              <button>Github</button>
+              {/* <img src="/images/github-icon.jpg" alt="Github logo" /> */}
             </a>
           </div>
         </div>
@@ -53,18 +53,18 @@ export default function Projects() {
               href="http://funkmeup.herokuapp.com/"
               rel="noopener noreferrer"
               target="_blank"
-              className="project-links btn-fmu"
+              className="btn-fmu visit"
             >
-              Visit
+              <button>Visit</button>
             </a>
             <a
               href="https://github.com/cmart11/funk-me-up"
               rel="noopener noreferrer"
               target="_blank"
-              className="project-links btn-fmu"
+              className="btn-fmu github"
             >
-              Github
-              <img src="/images/github-icon.jpg" alt="Github logo" />
+              <button>Github</button>
+              {/* <img src="/images/github-icon.jpg" alt="Github logo" /> */}
             </a>
           </div>
         </div>

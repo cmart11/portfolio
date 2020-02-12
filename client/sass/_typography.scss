@@ -163,7 +163,7 @@ body {
 
 // p1
 @mixin p1 {
-  //@include font-name;
+  @include sporting-regular();
   @include paragraph-style(16, 24);
 
   @include media-md {
