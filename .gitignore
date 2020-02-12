@@ -10,5 +10,4 @@ secrets.js
 .DS_Store
 npm-debug.log
 yarn-error.log
-fonts
 package-lock.json
