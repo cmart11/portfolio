@@ -7,29 +7,34 @@
   <title>Cristian Martinez</title>
   <link rel="icon" type="image/png" href="./favicon.ico" />
   <link rel="stylesheet" href="styles/main.bundle.css">
+
   <script defer src="/bundle.js"></script>
 </head>
 
 <body>
   <div id="app"></div>
-  <div class="cursor">
-  </div>
-  <script>
+  <div class="cursor"></div>
+  <script defer type="text/javascript">
     const cursor = document.querySelector('.cursor');
+
+    // const cursor = document.querySelector('.cursor');
     document.addEventListener('mousemove', e => {
       const pageX = `${e.pageX - 20}px`
       const pageY = `${e.pageY - 20}px`
       cursor.setAttribute("style", `top: ${pageY}; left: ${pageX};`)
     })
-    document.addEventListener('mousemove', (e) => {
+    document.addEventListener('mouseover', e => {
       if (e.target.classList.contains('action') && !cursor.classList.contains('expand')) {
-        cursor.classList.add('expand')
+        setTimeout(() => {
+          cursor.classList.add('expand')
+        }, 200)
       } else if (cursor.classList.contains('expand')) {
         setTimeout(() => {
           cursor.classList.remove('expand')
         }, 500)
       }
     })
+    console.log('Cris wuz here')
   </script>
 </body>
 

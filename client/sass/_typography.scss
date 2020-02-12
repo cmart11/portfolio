@@ -109,15 +109,15 @@ body {
 
 // h2
 @mixin h2 {
-  //@include font-name;
-  @include paragraph-style(32, 36);
+  @include sporting-bold();
+  @include paragraph-style(24, 36);
 
   @include media-md {
-    @include paragraph-style(54, 60);
+    @include paragraph-style(20, 36);
   }
 }
 .h2 {
-  @include h2;
+  @include h2();
 }
 
 // h2
@@ -163,7 +163,7 @@ body {
 
 // p1
 @mixin p1 {
-  //@include font-name;
+  @include sporting-regular();
   @include paragraph-style(16, 24);
 
   @include media-md {

@@ -40,6 +40,11 @@
     transform: scale(1);
   }
 
+  25% {
+    transform: scale(2);
+    opacity: 0.75;
+  }
+
   50% {
     transform: scale(2.5);
     opacity: 0.5;
@@ -47,7 +52,7 @@
 
   75% {
     transform: scale(2);
-    opacity: 0.3;
+    opacity: 0.35;
   }
 
   100% {
@@ -56,10 +61,10 @@
 }
 
 // Button hover
-.btn-nak:hover {
+.btn-nak > button:hover {
   background-color: $orange;
 }
 
-.btn-fmu:hover {
+.btn-fmu > button:hover {
   background-color: $mint;
 }

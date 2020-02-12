@@ -1,17 +1,19 @@
-#navbar {
-    position: absolute;
-    width: 90vw;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    top: 3vh;
-    list-style: none;
-    /* padding-left: 1.6vw; */
+#logo {
+    mix-blend-mode: difference;
+    z-index: 999;
 }
   
 .nav-item {
-    margin-right: 5vw;
-    color: $white;
+    position: fixed;
+    left: 50%;
+    width: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    // margin-top: -10%;
+    img{
+        margin-top: $padding-sm;
+    }
 }
