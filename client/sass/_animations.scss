@@ -29,10 +29,20 @@
   transition: color 0s;
 }
 
-// Cursor Animation
+/*
+*Header text animation
+*/ 
 
+.greeting{
+  perspective: 30px;
+}
+#inner{
+  transition: transform 0.5s ease-out;
+}
+
+// Cursor Animation
 .expand {
-  animation: cursorAnim 0.5s forwards ease-out;
+  animation: cursorAnim 0.2s forwards ease-out;
 }
 
 @keyframes cursorAnim {
