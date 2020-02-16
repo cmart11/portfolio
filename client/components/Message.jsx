@@ -30,10 +30,6 @@ export default class Message extends Component {
     this.setOrigin(this.container.current);
   }
 
-  componentDidUpdate() {
-    console.log('update')
-  }
-
   updatePosition(event) {
     var e = event || window.event;
     // let { _x, _y, x, y } = this;
@@ -54,6 +50,7 @@ export default class Message extends Component {
     // })
 
   }
+
   show() { return '(' + this.state.x + ', ' + this.state.y + ')'; }
 
   isTimeToUpdate() {
