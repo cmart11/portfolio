@@ -42,7 +42,7 @@
 
 // Cursor Animation
 .expand {
-  animation: cursorAnim 0.2s forwards ease-out;
+  animation: cursorAnim 0.5s forwards ease-out;
 }
 
 @keyframes cursorAnim {
@@ -50,7 +50,12 @@
     transform: scale(1);
   }
 
-  25% {
+  15% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+
+  30% {
     transform: scale(2);
     opacity: 0.75;
   }
