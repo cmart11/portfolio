@@ -11,7 +11,7 @@ export default class Message extends Component {
     this._y = 0;
     this.x = 0;
     this.y = 0;
-
+    // Refs
     this.inner = React.createRef();
     this.container = React.createRef();
     // Functions
@@ -32,46 +32,25 @@ export default class Message extends Component {
 
   updatePosition(event) {
     var e = event || window.event;
-    // let { _x, _y, x, y } = this;
-    // this.setState({
-    // x: e.clientX - _x,
-    // y: (e.clientY - _y) * -1
-    // })
-
     this.x = e.clientX - this._x
     this.y = (e.clientY - this._y) * -1
-
   }
   setOrigin(event) {
     const e = event
-    // this.setState({
     this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2)
     this._y = e.offsetTop + Math.floor(e.offsetHeight / 2)
-    // })
-
   }
 
   show() { return '(' + this.state.x + ', ' + this.state.y + ')'; }
 
   isTimeToUpdate() {
-
-    // this.setState({
-    //   counter: counter++
-    // })
-
     let { counter, updateRate } = this
-
-    // setTimeout(() => {
     if (counter++ % updateRate === 0) {
-      console.log('counter ::: ', counter)
       counter = 0
-
       return true
     } else {
       return false
     }
-    // }, 500)
-
   }
 
   onMouseEnterHandler(event) {
@@ -81,27 +60,11 @@ export default class Message extends Component {
   onMouseLeaveHandler() {
     this.inner.current.style = '';
   }
-  /**
-   * 
-   * onMouseMoveHandler fires too many times too quickly
-   * this causes the cursor element to stutter when moving over the text
-   * need to find a solution to limit or slow down update()
-   * 
-   * maybe use the mouse position and fire update() @ certain
-   * intervals instead of relying on a counter?
-   * 
-   * it's not the counter that's the issue it's that update()
-   * is being called way too many times as the mouse moves
-   * 
-   * maybe move the event handler to a diff element 
-   */
 
   onMouseMoveHandler(event) {
     if (this.isTimeToUpdate()) {
-      console.log('moved will updated')
       this.update(event)
     }
-    // this.update(event)
   }
 
   update(event) {
