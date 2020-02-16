@@ -6,7 +6,7 @@
   grid-template-rows: 10% 80% 10%;
   grid-template-areas: "menu logo switch"
                        "message message message"
-                       "icons . . ";
+                       "icons anchor . ";
 
   // Header message:
   .greeting {
@@ -28,7 +28,7 @@
       .content-word {
         margin-right: 1.6vw;
         font-size: 7.5vw;
-        line-height: 0.65em;
+        line-height: 0.6em;
         // letter-spacing: 0px;
       }
     }

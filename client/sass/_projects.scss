@@ -23,12 +23,12 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* padding: 2.2rem 0; */
   }
 
   p {
-    @include p1();
-    font-size: 1em;
+    // @include p1();
+    @include sporting-regular();
+    font-size: 1.2em;
     line-height: 1.2em;
     width: 80%;
     text-align: center;
