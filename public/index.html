@@ -17,47 +17,29 @@
   <script defer type="text/javascript">
     const body = document.querySelector('body');
     const cursor = document.querySelector('.cursor');
-    // document.addEventListener('mousemove', e => {
-    //   const pageX = `${e.pageX - 20}px`
-    //   const pageY = `${e.pageY - 20}px`
-    //   cursor.setAttribute("style", `top: ${pageY}; left: ${pageX};`)
-    // })
-    // document.addEventListener('mouseover', e => {
-    //   if (e.target.classList.contains('action') && !cursor.classList.contains('expand')) {
-    //     setTimeout(() => {
-    //       cursor.classList.add('expand')
-    //     }, 200)
-    //   } else if (cursor.classList.contains('expand')) {
-    //     setTimeout(() => {
-    //       cursor.classList.remove('expand')
-    //     }, 500)
-    //   }
-    // })
-    window.onresize = window.onload = function () {
-      screenWidth = this.innerWidth;
-      if (screenWidth >= 770) {
-        body.style.cursor = 'none';
-        document.addEventListener('mousemove', e => {
-          const pageX = `${e.pageX - 20}px`
-          const pageY = `${e.pageY - 20}px`
-          cursor.setAttribute("style", `top: ${pageY}; left: ${pageX};`)
-        })
-        document.addEventListener('mouseover', e => {
-          if (e.target.classList.contains('action') && !cursor.classList.contains('expand')) {
-            setTimeout(() => {
-              cursor.classList.add('expand')
-            }, 200)
-          } else if (cursor.classList.contains('expand')) {
-            setTimeout(() => {
-              cursor.classList.remove('expand')
-            }, 500)
-          }
-        })
-      } else {
-        cursor.style.display = "none";
-        console.log('cursor.style.display', cursor.style.display)
-        body.style.cursor = 'auto';
-      }
+    screenWidth = this.innerWidth;
+    console.log('screenWidth', screenWidth);
+    if (screenWidth >= 770) {
+      body.style.cursor = 'none';
+      document.addEventListener('mousemove', e => {
+        const pageX = `${e.pageX - 20}px`
+        const pageY = `${e.pageY - 20}px`
+        cursor.setAttribute("style", `top: ${pageY}; left: ${pageX};`)
+      })
+      document.addEventListener('mouseover', e => {
+        if (e.target.classList.contains('action') && !cursor.classList.contains('expand')) {
+          setTimeout(() => {
+            cursor.classList.add('expand')
+          }, 200)
+        } else if (cursor.classList.contains('expand')) {
+          setTimeout(() => {
+            cursor.classList.remove('expand')
+          }, 500)
+        }
+      })
+    } else {
+      cursor.style.display = "none";
+      body.style.cursor = 'auto';
     }
     console.log('Cris wuz here')
   </script>
